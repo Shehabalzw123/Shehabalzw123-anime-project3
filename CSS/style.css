@@ -1,0 +1,1548 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+img{
+  
+   width: 100%;
+   height: 100%;
+
+}
+
+body{
+    background-color: #35424a;
+}
+/* start header */
+.header {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    height: 65px;
+    align-items: center;
+    display: flex;
+}
+
+.header a {
+
+    color: gold;
+    text-decoration: none;
+
+}
+.logo-img{
+    width: 3rem;
+    transition: 1.55s;
+}
+.logo-img:hover{
+    transform: rotate(720deg);
+}
+.logo {
+    text-transform:capitalize;
+    box-shadow: 3px 2px 10px rgba(255, 217, 0, 0.555);
+    padding: 5px;
+    border-radius: 4px;
+}
+.logo:hover {
+   color: rgba(255, 217, 0, 0.664);
+}
+a i {
+
+    color: rgb(255, 217, 0)
+}
+
+a i:active {
+
+    color: rgba(255, 217, 0, 0.363);
+}
+
+.header.center {
+    flex: 2;
+}
+
+.header .right {
+    flex: 1;
+    float: right;
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+
+}
+
+.header.left {
+    flex: 1;
+}
+
+form {
+    width: 100%;
+
+}
+
+input {
+    width: 100%;
+    padding: 0.3rem 1rem;
+    border: 2px gold solid;
+    background-color: black;
+    border-radius: 25px;
+    color: gold;
+    outline: none;
+}
+
+input:focus {
+
+    border: 2px rgba(255, 217, 0, 0.363) solid;
+}
+
+::placeholder {
+    color: gold;
+}
+
+.gg{width: auto; height: 34px; border: solid 2px gold; background: none; color: gold; border-radius: 4px;
+transition: 0.32s;
+margin-bottom: 10px;
+padding: 0 5px;
+} 
+.gg:hover{
+    transform: scale(1.2);
+    box-shadow:rgba(255, 217, 0, 0.575) 2px 2px 6px;
+
+} 
+/* End header */
+/* start sid-bar */
+.side-bar {
+    background-color: rgb(0, 0, 0);
+    width: 200px;
+    display: none;
+    overflow-y: scroll;
+    height: 70vh;
+    position: absolute;
+    left: 0;
+    top: 39px;
+    z-index: 100;
+
+
+}
+
+.side-bar-blok {
+
+    transition: 0.15s;
+}
+
+.side-bar-blok a {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: gold;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.349);
+    text-decoration: none;
+    transition: 0.52s;
+    padding: 5px;
+}
+
+.side-bar-blok:hover a {
+    background-color: gold;
+    color: black;
+      animation: side-bar-blok  0.5s linear;
+     
+}
+.side-bar-blok:hover a{
+    background-color: gold;
+    color: black;
+      animation: side-bar-blok  0.4s linear;
+     padding: 40px;
+}
+.side-bar-blok:hover a i {
+  
+    color: black;
+}
+
+::-webkit-scrollbar {
+    background-color: black;
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: gold;
+    border-radius: 5px;
+    transition: 0.22s;
+    opacity: 0.7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+    opacity: 1;
+
+}
+
+::-webkit-scrollbar-corner {
+    background-color: black;
+}
+
+.nav-bar2 :focus-within .side-bar {
+    display: block;
+    animation: atomic 0.5s linear;
+  
+}
+@keyframes side-bar-blok {
+    0%{
+        transform: translate(-400px) ;
+
+    }
+
+    100%{
+        transform: translatex(0);
+    }
+}
+
+
+@keyframes atomic {
+    0%{
+        transform: translate(-400px) ;
+
+    }
+
+    100%{
+        transform: translatex(0);
+    }
+}
+
+
+
+@keyframes bottom {
+    0%{
+        transform: translate(5px) ;
+
+    }
+
+    100%{
+        transform: translatex(0);
+    }
+}
+
+
+/* End sid-bar */
+/* start nav-bar2 */
+.nav-bar2 {
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
+}
+
+.btn {
+    justify-content: center;
+    width: 60px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+.nav-bar2 :focus-within .side-bar {
+    display: block;
+}
+
+.nav-bar2 :focus-visible.side-bar {
+    display: none;
+}
+
+/* End nav-bar2 */
+/* start slide */
+/* sliderdad */
+
+/* End slide */
+
+.botton{
+position: absolute;
+background-color: #35424a;
+color: gold;
+width: 4rem;
+z-index: 100000000000000000000000000000;
+}
+
+.caredo { position: relative;
+   background-color: gold;
+ min-width: 150px;
+border-radius: 5px;
+    
+}
+.carddad {
+   
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 10px;
+   margin-top: 30px;
+   grid-auto-rows: 200px;
+   overflow: auto;
+   height: 80vh;
+}
+
+
+
+.dad{
+    display: grid;
+    background-color:#35424a;
+    grid-template-columns:  0fr 2fr;
+    width: 100%;
+}
+
+.leftbar{
+background-color: rgb(0, 0, 0);
+height:auto;
+
+
+}
+
+.line{
+    background-color: rgba(255, 217, 0, 0.822);
+    margin:  10px 0 0px 0;
+    height: 3px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 0px 5px gold;
+}
+.bottom{
+    width: 100%;
+    height: 70vh;
+    background-color: black;
+}
+
+
+.daddad{
+    display: flex;
+    width: 100%;
+    position: relative;
+
+}
+.slide{
+   
+    width: 100%;
+
+}
+
+.imgslide{
+    height: 50vh;
+}
+.dddd{
+    margin-bottom: 30px;
+}
+.cc{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+
+a{
+    margin: 0;
+    padding: 0;
+}
+
+
+.modal-body{
+    background-color: rgba(0, 0, 0, 0.856);
+    color: rgb(225, 231, 236);
+}
+.modal-header{
+    background-color: rgb(0, 0, 0);
+    color: rgb(225, 231, 236);
+}
+.modal-footer{
+    background-color: rgb(0, 0, 0);
+    color: rgb(225, 231, 236);
+}
+
+
+
+@media (max-width:2000px){
+    .botton{
+        position: absolute;
+        background-color:#35424a;
+        color: gold;
+        width: 8rem;
+        height: 30px;
+        z-index: 100000000000000000000000000000;
+        margin-left: 17px;
+        top: 50%;
+        bottom: 50%;
+        display: none;
+        border: none;
+        border-radius: 10px;
+        animation: bottom 0.5s linear;
+        }
+        .caredo:hover .botton{
+            display: block;
+        }
+
+
+    .cridet{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        color: gold;
+        width: 100%;
+    
+    }
+    
+    .name-cridet{
+        position: absolute;
+        bottom: -30px;
+    }
+    .cridet::before{
+        display: flex;
+        content: "TV";
+        width: 25px;
+        height: 20px;
+        background-color: rgba(255, 217, 0, 0.541);
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: 100000;
+        border-radius: 6px 0 0 0;
+        color: black;
+        justify-content: center;
+        font-size: 14PX;
+        transition: 0.4s;
+    }
+    
+    .cridet2::before{
+        display: flex;
+        content: "Move";
+        width: 25px;
+        height: 20px;
+        background-color: rgba(255, 217, 0, 0.479);
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: 100000;
+        border-radius: 6px 0 0 0;
+        color: black;
+        justify-content: center;
+        font-size: 14PX;
+    }
+
+
+
+
+    .cridet{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        color: gold;
+        width: 100%;
+        height: auto;
+        
+    }
+    
+    
+    .row{
+        margin-top: 20px;
+        z-index: 3000;
+        background-color: black;
+    }
+   .carddad12{
+    display: flex;
+    justify-content: center;
+   }
+    .carddad{
+   
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        margin-top: 30px;
+        grid-auto-rows: 250px;
+        width: 85rem;
+      
+     }
+    
+     .caredo{
+        background-color: #4a4a35;
+        min-width: 10px;
+      
+         
+     }
+}
+
+
+
+
+
+@media (min-width:1501px){
+
+    .botton{
+        position: absolute;
+        background-color:#35424a;
+        color: gold;
+        width: 8rem;
+        height: 30px;
+        z-index: 100000000000000000000000000000;
+        margin-left: 17px;
+        top: 50%;
+        bottom: 50%;
+        display: none;
+        border: none;
+        border-radius: 10px;
+        animation: bottom 0.5s linear;
+        
+        }
+
+        .caredo:hover .botton{
+            display: block;
+        }
+
+    .cridet{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        color: gold;
+        width: 100%;
+    
+    }
+   
+    .name-cridet{
+        position: absolute;
+        bottom: -30px;
+    }
+    .cridet::before{
+        display: flex;
+        content: "TV";
+        width: 25px;
+        height: 20px;
+        background-color: rgba(255, 217, 0, 0.541);
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: 100000;
+        border-radius: 6px 0 0 0;
+        color: black;
+        justify-content: center;
+        font-size: 14PX;
+        transition: 0.4s;
+    }
+    
+    .cridet2::before{
+        display: flex;
+        content: "Move";
+        width: 25px;
+        height: 20px;
+        background-color: rgba(255, 217, 0, 0.479);
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: 100000;
+        border-radius: 6px 0 0 0;
+        color: black;
+        justify-content: center;
+        font-size: 14PX;
+    }
+
+
+
+
+    .cridet{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        color: gold;
+        width: 100%;
+        height: auto;
+        
+    }
+    
+    
+    .row{
+        margin-top: 20px;
+        z-index: 3000;
+        background-color: black;
+    }
+   .carddad12{
+    display: flex;
+    justify-content: center;
+   }
+    .carddad{
+   
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        margin-top: 30px;
+        grid-auto-rows: 250px;
+        width: 85rem;
+      
+     }
+    
+     .caredo{
+        background-color: #4a4a35;
+        min-width: 10px;
+      
+         
+     }
+}
+
+
+@media (max-width:1500px){
+
+    .botton{
+        position: absolute;
+        background-color:#35424a;
+        color: gold;
+        width: 8rem;
+        height: 30px;
+        z-index: 100000000000000000000000000000;
+        margin-left: 17px;
+        top: 50%;
+        bottom: 50%;
+        display: none;
+        border: none;
+        border-radius: 10px;
+        animation: bottom 0.5s linear;
+        
+        }
+        .caredo:hover .botton{
+            display: block;
+        }
+
+
+    .cridet{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        color: gold;
+        width: 100%;
+    
+    }
+    
+    .name-cridet{
+        position: absolute;
+        bottom: -30px;
+    }
+    .cridet::before{
+        display: flex;
+        content: "TV";
+        width: 25px;
+        height: 20px;
+        background-color: rgba(255, 217, 0, 0.541);
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: 100000;
+        border-radius: 6px 0 0 0;
+        color: black;
+        justify-content: center;
+        font-size: 14PX;
+        transition: 0.4s;
+    }
+
+    .cridet2::before{
+        display: flex;
+        content: "Move";
+        width: 25px;
+        height: 20px;
+        background-color: rgba(255, 217, 0, 0.479);
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: 100000;
+        border-radius: 6px 0 0 0;
+        color: black;
+        justify-content: center;
+        font-size: 14PX;
+    }
+
+
+
+
+    .cridet{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        color: gold;
+        width: 100%;
+        height: auto;
+        
+    }
+    
+    
+    .row{
+        margin-top: 20px;
+        z-index: 3000;
+        background-color: black;
+    }
+   .carddad12{
+    display: flex;
+    justify-content: center;
+   }
+    .carddad{
+   
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        margin-top: 30px;
+        grid-auto-rows: 250px;
+        width: 85rem;
+      
+     }
+    
+     .caredo{
+        background-color: #4a4a35;
+        min-width: 10px;
+      
+         
+     }
+}
+
+@media (min-width:1200px) and (max-width:1400px){
+
+    .botton{
+        position: absolute;
+        background-color:#35424a;
+        color: gold;
+        width: 6rem;
+        font-size: 14px;
+        height: 30px;
+        z-index: 100000000000000000000000000000;
+        margin-left: 17px;
+        top: 50%;
+        bottom: 50%;
+        display: none;
+        border: none;
+        border-radius: 10px;
+        animation: bottom 0.5s linear;
+        
+        }
+        .caredo:hover .botton{
+            display: block;
+        }
+
+
+    .cridet{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        color: gold;
+        width: 100%;
+    
+    }
+    
+    .name-cridet{
+        position: absolute;
+        bottom: -30px;
+    }
+    .cridet::before{
+        display: flex;
+        content: "TV";
+        width: 25px;
+        height: 20px;
+        background-color: rgba(255, 217, 0, 0.541);
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: 100000;
+        border-radius: 6px 0 0 0;
+        color: black;
+        justify-content: center;
+        font-size: 14PX;
+        transition: 0.4s;
+    }
+   
+    .cridet2::before{
+        display: flex;
+        content: "Move";
+        width: 25px;
+        height: 20px;
+        background-color: rgba(255, 217, 0, 0.479);
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: 100000;
+        border-radius: 6px 0 0 0;
+        color: black;
+        justify-content: center;
+        font-size: 14PX;
+    }
+
+
+
+
+    .cridet{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        color: gold;
+        width: 100%;
+        height: auto;
+        
+    }
+    
+    
+    .row{
+        margin-top: 20px;
+        z-index: 3000;
+        background-color: black;
+    }
+   .carddad12{
+    display: flex;
+    justify-content: center;
+   }
+    .carddad{
+   
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        margin-top: 30px;
+        grid-auto-rows: 230px;
+        width: 75rem;
+      
+     }
+    
+     .caredo{
+        background-color: #4a4a35;
+        min-width: 10px;
+      
+         
+     }
+}
+
+
+@media screen and (min-width:1131px) and (max-width:1199px){
+
+    .botton{
+        position: absolute;
+        background-color:#35424a;
+        color: gold;
+        width: 6rem;
+        font-size: 14px;
+        height: 30px;
+        z-index: 100001;
+        margin-left: 10px;
+        top: 50%;
+        bottom: 50%;
+        display: none;
+        border: none;
+        border-radius: 10px;
+        transition: 0.4s;
+        animation: bottom 0.5s linear;
+        
+        }
+
+        .caredo:hover .botton{
+            display: block;
+        }
+
+
+    .cridet{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        color: gold;
+        width: 100%;
+    
+    }
+    
+    .name-cridet{
+        position: absolute;
+        bottom: -30px;
+    }
+    .caredo.cridet::before{
+        display: flex;
+        content: "TV";
+        width: 25px;
+        height: 20px;
+        background-color: rgba(255, 217, 0, 0.541);
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: 100000;
+        border-radius: 6px 0 0 0;
+        color: black;
+        justify-content: center;
+        font-size: 14PX;
+        transition: 0.4s;
+    }
+    
+    .cridet2::before{
+        display: flex;
+        content: "Move";
+        width: 25px;
+        height: 20px;
+        background-color: rgba(255, 217, 0, 0.479);
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: 100000;
+        border-radius: 6px 0 0 0;
+        color: black;
+        justify-content: center;
+        font-size: 14PX;
+    }
+
+
+
+
+    .cridet{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        color: gold;
+        width: 100%;
+        height: auto;
+        
+    }
+    
+    
+    .row{
+        margin-top: 20px;
+        z-index: 3000;
+        background-color: black;
+    }
+   .carddad12{
+    display: flex;
+    justify-content: center;
+   }
+    .carddad{
+   
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        margin-top: 30px;
+        grid-auto-rows: 190px;
+        width: 70rem;
+      
+     }
+    
+     .caredo{
+        background-color: #4a4a35;
+        min-width: 10px;
+      
+         
+     }
+}
+
+
+
+@media (max-width:1130px){
+
+    .botton{
+        position: absolute;
+        background-color:#35424a;
+        color: gold;
+        width: 6rem;
+        font-size: 14px;
+        height: 30px;
+        z-index: 100001;
+        margin-left: 10px;
+        top: 50%;
+        bottom: 50%;
+        display: none;
+        border: none;
+        border-radius: 10px;
+        transition: 0.4s;
+        animation: bottom 0.5s linear;
+        
+        }
+
+        .caredo:hover .botton{
+            display: block;
+        }
+
+
+    .cridet{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        color: gold;
+        width: 100%;
+    
+    }
+    
+    .name-cridet{
+        position: absolute;
+        bottom: -30px;
+    }
+    .caredo.cridet::before{
+        display: flex;
+        content: "TV";
+        width: 25px;
+        height: 20px;
+        background-color: rgba(255, 217, 0, 0.541);
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: 100000;
+        border-radius: 6px 0 0 0;
+        color: black;
+        justify-content: center;
+        font-size: 14PX;
+        transition: 0.4s;
+    }
+    
+    .cridet2::before{
+        display: flex;
+        content: "Move";
+        width: 25px;
+        height: 20px;
+        background-color: rgba(255, 217, 0, 0.479);
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: 100000;
+        border-radius: 6px 0 0 0;
+        color: black;
+        justify-content: center;
+        font-size: 14PX;
+    }
+
+
+
+
+    .cridet{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        color: gold;
+        width: 100%;
+        height: auto;
+        
+    }
+    
+    
+    .row{
+        margin-top: 20px;
+        z-index: 3000;
+        background-color: black;
+    }
+   .carddad12{
+    display: flex;
+    justify-content: center;
+   }
+    .carddad{
+   
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        margin-top: 30px;
+        grid-auto-rows: 190px;
+        width: 60rem;
+      
+     }
+    
+     .caredo{
+        background-color: #4a4a35;
+        min-width: 10px;
+      
+         
+     }
+}
+
+
+
+@media (max-width:1000px)  {
+
+    .botton{
+        position: absolute;
+        background-color:#35424a;
+        color: gold;
+        width: 6rem;
+        
+        height: 30px;
+        z-index: 100000000000000000000000000000;
+        margin-left: 10px;
+        top: 50%;
+        bottom: 50%;
+        display: none;
+        border: none;
+        border-radius: 10px;
+        animation: bottom 0.5s linear;
+        font-size: 14px;
+        animation: bottom 0.5s linear;
+        }
+
+        .caredo:hover .botton{
+            display: block;
+        }
+
+
+    .sliderdad{
+        background-color: black;
+        width: 100%;
+        height: 20vh;
+    }
+    .cridet{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        color: gold;
+        width: 100%;
+    
+    }
+    
+    .name-cridet{
+        position: absolute;
+        bottom: -30px;
+    }
+    .cridet::before{
+        display: flex;
+        content: "TV";
+        width: 25px;
+        height: 20px;
+        background-color: rgba(255, 217, 0, 0.541);
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: 100000;
+        border-radius: 6px 0 0 0;
+        color: black;
+        justify-content: center;
+        font-size: 14PX;
+        transition: 0.4s;
+    }
+    .cridet:hover::before{
+        display: flex;
+        content: "";
+        padding-left: 10px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 217, 0, 0.541);
+        position: absolute;
+        z-index: 100000;
+        color: black;
+        font-size: 14PX;
+        align-items: center;
+    }
+    .cridet2::before{
+        display: flex;
+        content: "Move";
+        width: 25px;
+        height: 20px;
+        background-color: rgba(255, 217, 0, 0.479);
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: 100000;
+        border-radius: 6px 0 0 0;
+        color: black;
+        justify-content: center;
+        font-size: 14PX;
+    }
+
+
+
+
+    .cridet{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        color: gold;
+        width: 100%;
+        height: 150px;
+        
+    }
+    
+    
+    .row{
+        margin-top: 20px;
+        z-index: 3000;
+        background-color: black;
+    }
+   
+    .carddad{
+   
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        margin-top: 30px;
+        grid-auto-rows: 170px;
+        width: 45rem;
+        margin-left: 5%;
+     }
+    
+     .caredo{
+        background-color: #35424a;
+        min-width: 10px;
+      
+         
+     }
+
+
+
+
+    
+
+
+}
+@media (min-width:421px) and (max-width:719px) {
+    
+    .botton{
+        position: absolute;
+        background-color:#35424a;
+        color: gold;
+        width: 5rem;
+        height: 30px;
+        z-index: 100000000000000000000000000000;
+        margin-left: 8px;
+        top: 50%;
+        bottom: 50%;
+        display: none;
+        border: none;
+        border-radius: 10px;
+        animation: bottom 0.5s linear;
+        font-size: 14px;
+        animation: bottom 0.5s linear;
+        }
+
+        .caredo:hover .botton{
+            display: block;
+        }
+
+
+    .container1{
+        width: 100%;
+        margin: 30px;
+    }
+    .cridet{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        color: gold;
+        width: 100%;
+    
+    }
+    
+    .name-cridet{
+        position: absolute;
+        bottom: -30px;
+    }
+    .cridet::before{
+        display: flex;
+        content: "TV";
+        width: 25px;
+        height: 20px;
+        background-color: rgba(255, 217, 0, 0.541);
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: 100000;
+        border-radius: 6px 0 0 0;
+        color: black;
+        justify-content: center;
+        font-size: 14PX;
+        transition: 0.4s;
+    }
+    .cridet:hover::before{
+        display: flex;
+        content: "";
+        padding-left: 10px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 217, 0, 0.541);
+        position: absolute;
+        z-index: 100000;
+        color: black;
+        font-size: 14PX;
+        align-items: center;
+    }
+    .cridet2::before{
+        display: flex;
+        content: "Move";
+        width: 25px;
+        height: 20px;
+        background-color: rgba(255, 217, 0, 0.479);
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: 100000;
+        border-radius: 6px 0 0 0;
+        color: black;
+        justify-content: center;
+        font-size: 14PX;
+    }
+
+
+
+
+    .cridet{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        color: gold;
+        width: 100%;
+        height: 150px;
+        
+    }
+    
+    
+    .row{
+        margin-top: 20px;
+        z-index: 3000;
+        background-color: black;
+    }
+   
+    .carddad{
+   
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        margin-top: 30px;
+        grid-auto-rows: 170px;
+        width: 100%;
+     }
+    
+     .caredo{
+        background-color: #35424a;
+        min-width: 10px;
+      
+         
+     }
+   
+    .logo-img{
+        width: 3rem;
+        height: 3rem;
+    }
+   
+    .sliderdad{
+        background-color: black;
+        width: 100%;
+        height: 20vh;
+    }
+    .left p{
+        font-size: 16px;
+    }
+    .dad{
+        display: grid;
+        background-color:#35424a;
+        grid-template-columns: 0fr 2fr;
+        width: 100%;
+    }
+    .leftbar{
+        background-color: rgb(0, 0, 0);
+        height:auto;
+        }
+        
+}
+@media (max-width:420px)  {
+    
+    .botton{
+        position: absolute;
+        background-color:#35424a;
+        color: gold;
+        width: 5rem;
+        height: 30px;
+        z-index: 100000000000000000000000000000;
+        margin-left: 8px;
+        top: 50%;
+        bottom: 50%;
+        display: none;
+        border: none;
+        border-radius: 10px;
+        animation: bottom 0.5s linear;
+        font-size: 14px;
+        }
+
+        .caredo:hover .botton{
+            display: block;
+        }
+
+
+    .container1{
+        width: 100%;
+        margin: 30px;
+    }
+    .cridet{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        color: gold;
+        width: 100%;
+    
+    }
+    
+    .name-cridet{
+        position: absolute;
+        bottom: -30px;
+    }
+    .cridet::before{
+        display: flex;
+        content: "TV";
+        width: 25px;
+        height: 20px;
+        background-color: rgba(255, 217, 0, 0.541);
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: 100000;
+        border-radius: 6px 0 0 0;
+        color: black;
+        justify-content: center;
+        font-size: 14PX;
+        transition: 0.4s;
+    }
+    .cridet:hover::before{
+        display: flex;
+        content: "";
+        padding-left: 10px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 217, 0, 0.541);
+        position: absolute;
+        z-index: 100000;
+        color: black;
+        font-size: 14PX;
+        align-items: center;
+    }
+    .cridet2::before{
+        display: flex;
+        content: "Move";
+        width: 25px;
+        height: 20px;
+        background-color: rgba(255, 217, 0, 0.479);
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: 100000;
+        border-radius: 6px 0 0 0;
+        color: black;
+        justify-content: center;
+        font-size: 14PX;
+    }
+
+
+
+
+    .cridet{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        color: gold;
+        width: 100%;
+        height: 150px;
+        
+    }
+    
+    
+    .row{
+        margin-top: 20px;
+        z-index: 3000;
+        background-color: black;
+    }
+   
+    .carddad{
+   
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        margin-top: 30px;
+        grid-auto-rows: 170px;
+        width: 20rem;
+     }
+    
+     .caredo{
+        background-color: #35424a;
+        min-width: 10px;
+      
+         
+     }
+     .nav-bar2{
+        margin-top: 10px;
+    }
+    .logo-img{
+        width: 3rem;
+        height: 3rem;
+    }
+   
+    .sliderdad{
+        background-color: black;
+        width: 100%;
+        height: 20vh;
+    }
+    .left p{
+        font-size: 16px;
+    }
+    .dad{
+        display: grid;
+        background-color:#35424a;
+        grid-template-columns: 0fr 2fr;
+        width: 100%;
+    }
+    .leftbar{
+        background-color: rgb(0, 0, 0);
+        height:auto;
+        }
+        .dddd{width: 420px;}
+}
+@media (width:418px){.dddd{width: 418px;}}
+@media (width:417px){.dddd{width: 417px;}}
+@media (width:416px){.dddd{width: 416px;}}
+@media (width:415px){.dddd{width: 415px;}}
+@media (width:414px){.dddd{width: 414px;}}
+@media (width:413px){.dddd{width: 413px;}}
+@media (width:412px){.dddd{width: 412px;}}
+@media (width:411px){.dddd{width: 411px;}}
+@media (width:410px){.dddd{width: 410px;}}
+@media (width:409px){.dddd{width: 409px;}}
+@media (width:408px){.dddd{width: 408px;}}
+@media (width:407px){.dddd{width: 407px;}}
+@media (width:406px){.dddd{width: 406px;}}
+@media (width:405px){.dddd{width: 405px;}}
+@media (width:404px){.dddd{width: 404px;}}
+@media (width:403px){.dddd{width: 403px;}}
+@media (width:402px){.dddd{width: 402px;}}
+@media (width:401px){.dddd{width: 401px;}}
+@media (width:400px){.dddd{width: 400px;}}
+@media (width:399px){.dddd{width: 399px;}}
+@media (width:398px){.dddd{width: 398px;}}
+@media (width:397px){.dddd{width: 397px;}}
+@media (width:396px){.dddd{width: 396px;}}
+@media (width:395px){.dddd{width: 395px;}}
+@media (width:394px){.dddd{width: 394px;}}
+@media (width:393px){.dddd{width: 393px;}}
+@media (width:392px){.dddd{width: 392px;}}
+@media (width:391px){.dddd{width: 391px;}}
+@media (width:390px){.dddd{width: 390px;}}
+@media (width:389px){.dddd{width: 389px;}}
+@media (width:388px){.dddd{width: 388px;}}
+@media (width:387px){.dddd{width: 387px;}}
+@media (width:386px){.dddd{width: 386px;}}
+@media (width:385px){.dddd{width: 385px;}}
+@media (width:384px){.dddd{width: 384px;}}
+@media (width:383px){.dddd{width: 383px;}}
+@media (width:382px){.dddd{width: 382px;}}
+@media (width:381px){.dddd{width: 381px;}}
+@media (width:380px){.dddd{width: 380px;}}
+@media (width:379px){.dddd{width: 379px;}}
+@media (width:378px){.dddd{width: 378px;}}
+@media (width:377px){.dddd{width: 377px;}}
+@media (width:376px){.dddd{width: 376px;}}
+@media (width:375px){.dddd{width: 375px;}}
+@media (width:374px){.dddd{width: 374px;}}
+@media (width:373px){.dddd{width: 373px;}}
+@media (width:372px){.dddd{width: 372px;}}
+@media (width:371px){.dddd{width: 371px;}}
+@media (width:370px){.dddd{width: 370px;}}
+@media (width:369px){.dddd{width: 369px;}}
+@media (width:368px){.dddd{width: 368px;}}
+@media (width:367px){.dddd{width: 367px;}}
+@media (width:366px){.dddd{width: 366px;}}
+@media (width:365px){.dddd{width: 365px;}}
+@media (width:364px){.dddd{width: 364px;}}
+@media (width:363px){.dddd{width: 363px;}}
+@media (width:362px){.dddd{width: 362px;}}
+@media (width:361px){.dddd{width: 361px;}}
+@media (width:360px){.dddd{width: 360px;}}
+@media (width:359px){.dddd{width: 359px;}}
+@media (width:358px){.dddd{width: 358px;}}
+@media (width:357px){.dddd{width: 357px;}}
+@media (width:356px){.dddd{width: 356px;}}
+@media (width:355px){.dddd{width: 355px;}}
+@media (width:354px){.dddd{width: 354px;}}
+@media (width:353px){.dddd{width: 353px;}}
+@media (width:352px){.dddd{width: 352px;}}
+@media (width:351px){.dddd{width: 351px;}}
+@media (width:350px){.dddd{width: 350px;}}
